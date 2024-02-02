@@ -6,8 +6,8 @@ import searchIcon from "../../assets/icons/search_icon.png";
 
 const Header = () => {
   return (
-    <header className="w-full h-[15vh] border-solid border-2 border-sky-500">
-      <div className="w-full h-[5vh] bg-[#D9D9D9] flex justify-around items-center">
+    <header className="w-full h-[15vh] ">
+      <div className="w-full h-[6vh] bg-[#D9D9D9] flex justify-around items-center">
         <span className="text-sm text-[#696969]">Have any question?</span>
         <div className="flex gap-5">
           <span className="text-sm text-[#696969] flex items-center gap-1">
