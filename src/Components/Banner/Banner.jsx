@@ -1,12 +1,12 @@
 import React from "react";
-import { SlidesData } from "../../Data/SlidesData";
+import { ImagesData } from "../../Data/ImagesData";
 import Carouserl from "../Carousel/Carouserl";
 
 const Banner = () => {
   return (
-    <div className="w-screen h-[85vh]">
-      <div className="w-screen h-[75vh]">
-        <Carouserl slides={SlidesData} />
+    <div className="w-full h-[85vh]">
+      <div className="w-full h-[75vh]">
+        <Carouserl slides={ImagesData} />
       </div>
       <div className="w-full h-[10vh] bg-[#FAB702] flex justify-around items-center">
         <p className="text-white">

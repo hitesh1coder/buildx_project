@@ -1,6 +1,8 @@
 import "./App.css";
 import About from "./Components/About/About";
 import Banner from "./Components/Banner/Banner";
+import EmployeeDetails from "./Components/Employee/EmployeeDetails";
+import Featured from "./Components/Featured/Featured";
 import Header from "./Components/Header/Header";
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <Banner />
       <About />
+      <Featured />
+      <EmployeeDetails />
     </div>
   );
 }
