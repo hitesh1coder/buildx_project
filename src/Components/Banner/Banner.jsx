@@ -1,11 +1,12 @@
 import React from "react";
-import wallpaper from "../../assets/images/wallpaper_1.png";
+import { SlidesData } from "../../Data/SlidesData";
+import Carouserl from "../Carousel/Carouserl";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[85vh]">
-      <div className="w-full h-[75vh]">
-        <img className="h-[100%] w-full" src={wallpaper} alt="wallpaper" />
+    <div className="w-screen h-[85vh]">
+      <div className="w-screen h-[75vh]">
+        <Carouserl slides={SlidesData} />
       </div>
       <div className="w-full h-[10vh] bg-[#FAB702] flex justify-around items-center">
         <p className="text-white">
