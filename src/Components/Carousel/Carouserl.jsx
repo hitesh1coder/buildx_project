@@ -18,8 +18,8 @@ const Carouserl = ({ slides }) => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="overflow-hidden relative h-[75vh]">
-      <div className="flex gap-1 ">
+    <div className="overflow-hidden relative md:h-96 lg:h-96">
+      <div className="flex">
         {slides.map((slide, index) => (
           <React.Fragment key={index}>
             <img
@@ -31,24 +31,24 @@ const Carouserl = ({ slides }) => {
               alt={slide.title}
             />
             <div
-              className={`absolute top-15 left-40 w-full h-full flex flex-col justify-center transition-transform ease-out duration-700`}
+              className={`absolute top-2 lg:top-15 left-5 lg:left-40 w-full h-full flex flex-col justify-center transition-transform ease-out duration-700`}
             >
               <h1
-                className={` w-[35vw] text-5xl uppercase font-extrabold text-[#fff] ${
+                className={` w-[80vw] md:w-[50vw] lg:w-[35vw] text-xl lg:text-5xl uppercase font-extrabold text-[#fff] ${
                   currSlide == index ? "block" : "hidden"
                 }`}
               >
                 {slide.title}
               </h1>
               <p
-                className={`w-56 text-sm font-extrabold text-[#fff] ${
+                className={`w-[90vw] md:w-[50vw] lg:w-[35vw] text-xs lg:text-sm font-extrabold text-[#fff] ${
                   currSlide == index ? "block" : "hidden"
                 }`}
               >
                 {slide.content}
               </p>
               <button
-                className={`w-28 border-none outline-none px-5 py-1 bg-[#FAB702] text-white text-sm  ${
+                className={`w-20 lg:w-28 border-none outline-none lg:px-5 lg:py-1 bg-[#FAB702] text-white text-xs lg:text-sm  ${
                   currSlide == index ? "block" : "hidden"
                 }`}
               >
@@ -58,7 +58,7 @@ const Carouserl = ({ slides }) => {
           </React.Fragment>
         ))}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+      <div className="absolute inset-0 flex items-center justify-between p-2 lg:p-4">
         <button onClick={prevSlide}>
           <img
             className="bg-white rounded-full p-1"

@@ -4,18 +4,18 @@ import Carouserl from "../Carousel/Carouserl";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[85vh]">
-      <div className="w-full h-[75vh]">
+    <div className="w-full">
+      <div className="w-full">
         <Carouserl slides={ImagesData} />
       </div>
-      <div className="w-full h-[10vh] bg-[#FAB702] flex justify-around items-center">
-        <p className="text-white">
+      <div className="w-full h-[10vh] bg-[#FAB702] flex justify-around items-center px-1">
+        <p className="text-white text-sx lg:text-sm">
           Consulting And Estimate For Your Project,
-          <span className="text-black underline italic font-semibold">
+          <span className="text-black text-sx lg:text-sm underline italic font-semibold">
             Contact Us Today
           </span>
         </p>
-        <button className="border-none outline-none px-5 py-2 bg-white text-[#FAB702] text-sm">
+        <button className="border-none outline-none lg:px-5 lg:py-2 bg-white text-[#FAB702] text-sm">
           Get a Quote
         </button>
       </div>

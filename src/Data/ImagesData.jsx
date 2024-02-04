@@ -22,8 +22,7 @@ export const ImagesData = [
     id: 1,
     image: wallpaper1,
     title: "We Do Big Things With Big Ideas",
-    content: ` Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Sapiente quia perspiciatis iure laborum dolores, rerum pariatur,
+    content: `laborum dolores, rerum pariatur,
       sunt atque ratione sed sequi asperiores necessitatibus labore
       quis. Asperiores eum nihil quisquam perspiciatis.`,
   },
@@ -33,17 +32,14 @@ export const ImagesData = [
     title: "Title 2",
     content: ` Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Sapiente quia perspiciatis iure laborum dolores, rerum pariatur,
-      sunt atque ratione sed sequi asperiores necessitatibus labore
-      quis. Asperiores eum nihil quisquam perspiciatis.`,
+      sunt atque ratione sed sequi`,
   },
   {
     id: 3,
     image: wallpaper3,
     title: "Title 3",
     content: ` Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Sapiente quia perspiciatis iure laborum dolores, rerum pariatur,
-      sunt atque ratione sed sequi asperiores necessitatibus labore
-      quis. Asperiores eum nihil quisquam perspiciatis.`,
+      Sapiente quia perspiciatis iure laborum dolores, `,
   },
   {
     id: 4,
@@ -52,7 +48,7 @@ export const ImagesData = [
     content: ` Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Sapiente quia perspiciatis iure laborum dolores, rerum pariatur,
       sunt atque ratione sed sequi asperiores necessitatibus labore
-      quis. Asperiores eum nihil quisquam perspiciatis.`,
+      quis.`,
   },
 ];
 

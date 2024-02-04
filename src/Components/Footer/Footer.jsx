@@ -7,7 +7,7 @@ const Footer = () => {
         <span className="text-sm text-[#D8DEFF]">&copy; DIGIWHIZ 2019</span>
         <div className="flex gap-5">
           <span className="text-sm text-[#696969] flex items-center gap-1">
-            <ul className="flex gap-5">
+            <ul className="flex gap-1 md:gap-3 text-xs lg:gap-5">
               <li className="font-semibold text-[#D8DEFF] cursor-pointer">
                 Home
               </li>

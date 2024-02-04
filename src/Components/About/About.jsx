@@ -6,12 +6,16 @@ import refubriseIcon from "../../assets/icons/refubrise_icon.png";
 
 const About = () => {
   return (
-    <div className="w-full h-[90vh] flex my-2">
-      <div className="w-[50vw]">
-        <img className="w-full h-full" src={sideImage} alt="side-image" />
+    <div className="w-full h-[90vh] flex flex-col lg:flex-row my-2">
+      <div className="w-full lg:w-[50vw]">
+        <img
+          className="w-full h-[40vh] md:h-[30vh] lg:h-full"
+          src={sideImage}
+          alt="side-image"
+        />
       </div>
-      <div className="w-[50vw] flex flex-col gap-4 justify-center p-4 bg-[#F8F8F8]">
-        <div className="flex  gap- -500 w-[70%] p-3">
+      <div className=" w-full  lg:w-[50vw] flex flex-col gap-5 justify-center p-4 bg-[#F8F8F8]">
+        <div className="flex w-full md:w-[80%] gap-2 lg:w-[70%] p-3">
           <img src={buildIcon} alt="build" />
           <div className="">
             <h1 className="font-semibold text-[#FAB702]">GENERAL BUILDER</h1>
@@ -21,7 +25,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex  gap-3  w-[70%] p-3">
+        <div className="flex w-full md:w-[80%] gap-2 lg:w-[70%] p-3">
           <img src={houseIcon} alt="house" />
           <div className="">
             <h1 className="font-semibold">HOUSE EXTENSIONS</h1>
@@ -31,7 +35,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-3 w-[70%] p-3">
+        <div className="flex w-full md:w-[80%] gap-2 lg:w-[70%] p-3">
           <img src={refubriseIcon} alt="refubrise" />
           <div className="">
             <h1 className="font-semibold">REFURBISHMENT</h1>
@@ -41,8 +45,6 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div></div>
-        <div></div>
       </div>
     </div>
   );

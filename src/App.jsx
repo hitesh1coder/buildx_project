@@ -1,10 +1,13 @@
 import "./App.css";
-import About from "./Components/About/About";
-import Banner from "./Components/Banner/Banner";
-import EmployeeDetails from "./Components/Employee/EmployeeDetails";
-import Featured from "./Components/Featured/Featured";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
+
+import {
+  About,
+  Banner,
+  EmployeeDetails,
+  Header,
+  Featured,
+  Footer,
+} from "./Components/index";
 
 function App() {
   return (
