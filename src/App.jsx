@@ -3,6 +3,7 @@ import About from "./Components/About/About";
 import Banner from "./Components/Banner/Banner";
 import EmployeeDetails from "./Components/Employee/EmployeeDetails";
 import Featured from "./Components/Featured/Featured";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Featured />
       <EmployeeDetails />
+      <Footer />
     </div>
   );
 }

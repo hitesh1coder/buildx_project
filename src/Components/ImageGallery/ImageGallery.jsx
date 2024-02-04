@@ -1,13 +1,13 @@
 import React from "react";
 import addIcon from "../../assets/icons/add_iocn.png";
 import linkIcon from "../../assets/icons/link_icon.png";
-import { ImagesData } from "../../Data/ImagesData";
+import { FeaturedImages } from "../../Data/ImagesData";
 
 const ImageGallery = ({ selectedCategory }) => {
-  let filteredImages = ImagesData;
+  let filteredImages = FeaturedImages;
 
   if (selectedCategory !== "All") {
-    filteredImages = ImagesData.filter(
+    filteredImages = FeaturedImages.filter(
       (img) => img.category.toLowerCase() === selectedCategory.toLowerCase()
     );
   }
@@ -28,7 +28,7 @@ const ImageGallery = ({ selectedCategory }) => {
               />
             </div>
             <div className="absolute h-[20%] w-full bg-white/80 flex items-center justify-center gap-2 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <h1>ARCHITECTURE AND DESIGN</h1>
+              <h1 className="uppercase">{image.category}</h1>
               <img src={addIcon} alt="add" />
               <img src={linkIcon} alt="link" />
             </div>

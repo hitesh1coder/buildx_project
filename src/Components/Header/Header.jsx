@@ -20,11 +20,11 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div className="flex">
-        <div className="flex w-[40%] justify-center items-center">
+      <div className="flex justify-around">
+        <div className="flex  justify-center items-center">
           <img src={logo} alt="buildx-logo" />
         </div>
-        <div className="flex w-[60%] justify-center items-center">
+        <div className="flex justify-center items-center">
           <nav>
             <ul className="flex gap-5">
               <li className="font-semibold cursor-pointer text-[#F9B701]">

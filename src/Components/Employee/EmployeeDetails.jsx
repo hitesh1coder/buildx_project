@@ -1,4 +1,5 @@
 import React from "react";
+import EmployeeData from "../../Data/EmployeeData";
 
 const EmployeeDetails = () => {
   return (
@@ -9,29 +10,34 @@ const EmployeeDetails = () => {
 
       <table className=" w-[80%] text-center">
         <thead>
-          <tr className="bg-[#215895] text-white font-semibold py-2 ">
-            <th className="border-l-2 border-[#D9D9D9]">Code</th>
-            <th className="border-l-2 border-[#D9D9D9]">Name</th>
-            <th className="border-l-2 border-[#D9D9D9]">Designation</th>
-            <th className="border-l-2 border-[#D9D9D9]">Contact Details</th>
-            <th className="border-l-2 border-[#D9D9D9]">Work Profile</th>
+          <tr className="bg-[#215895] text-white font-semibold">
+            <th className="border-l-2 p-3 border-[#D9D9D9]">Code</th>
+            <th className="border-l-2 p-3 border-[#D9D9D9]">Name</th>
+            <th className="border-l-2 p-3 border-[#D9D9D9]">Designation</th>
+            <th className="border-l-2 p-3 border-[#D9D9D9]">Contact Details</th>
+            <th className="border-l-2 p-3 border-[#D9D9D9]">Work Profile</th>
           </tr>
         </thead>
         <tbody>
-          <tr className="bg-[#F5F5F5]">
-            <td className="border-l-2 border-[#D9D9D9]">Alfreds Futterkiste</td>
-            <td className="border-l-2 border-[#D9D9D9]">Maria Anders</td>
-            <td className="border-l-2 border-[#D9D9D9]">Germany</td>
-            <td className="border-l-2 border-[#D9D9D9]">Centro </td>
-            <td className="border-l-2 border-[#D9D9D9]">Francisco Chang</td>
-          </tr>
-          <tr className="bg-[#DBE6F2]">
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td>Centro </td>
-            <td>Francisco Chang</td>
-          </tr>
+          {EmployeeData?.map((emp, i) => (
+            <tr className={`${i % 2 === 0 ? "bg-[#F5F5F5]" : "bg-[#DBE6F2]"} `}>
+              <td className="border-l-2 text-sm font-semibold p-2 border-[#D9D9D9]">
+                {emp.code}
+              </td>
+              <td className="border-l-2 text-sm font-semibold p-2 border-[#D9D9D9]">
+                {emp.name}
+              </td>
+              <td className="border-l-2 text-sm font-semibold p-2 border-[#D9D9D9]">
+                {emp.designation}
+              </td>
+              <td className="border-l-2 text-sm font-semibold p-2 border-[#D9D9D9]">
+                {emp.contact}{" "}
+              </td>
+              <td className="border-l-2 text-sm font-semibold p-2 border-[#D9D9D9]">
+                {emp.workProfile}
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
