@@ -24,7 +24,10 @@ const EmployeeDetails = () => {
         </thead>
         <tbody>
           {EmployeeData?.map((emp, i) => (
-            <tr className={`${i % 2 === 0 ? "bg-[#F5F5F5]" : "bg-[#DBE6F2]"} `}>
+            <tr
+              key={i}
+              className={`${i % 2 === 0 ? "bg-[#F5F5F5]" : "bg-[#DBE6F2]"} `}
+            >
               <td className="border-l-2 text-sm font-semibold px-1 md:p-1 lg:p-2 border-[#D9D9D9]">
                 {emp.code}
               </td>

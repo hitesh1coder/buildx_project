@@ -2,6 +2,7 @@ import React from "react";
 import addIcon from "../../assets/icons/add_iocn.png";
 import linkIcon from "../../assets/icons/link_icon.png";
 import { FeaturedImages } from "../../Data/ImagesData";
+import { motion } from "framer-motion";
 
 const ImageGallery = ({ selectedCategory }) => {
   let filteredImages = FeaturedImages;
@@ -16,8 +17,12 @@ const ImageGallery = ({ selectedCategory }) => {
     <div className="flex h-full p-1 items-center">
       <div className="grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3 transition-all duration-1000">
         {filteredImages.map((image) => (
-          <div
+          <motion.div
             key={image.id}
+            initial={{ translateY: 100, opacity: 0 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 60 }}
+            viewport={{ once: true }}
             className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
           >
             <div className="h-72 w-[33rem]">
@@ -32,7 +37,7 @@ const ImageGallery = ({ selectedCategory }) => {
               <img src={addIcon} alt="add" />
               <img src={linkIcon} alt="link" />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

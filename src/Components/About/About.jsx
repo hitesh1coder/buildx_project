@@ -3,18 +3,31 @@ import sideImage from "../../assets/images/wallpaper2.png";
 import houseIcon from "../../assets/icons/hous_icon.png";
 import buildIcon from "../../assets/icons/builder_icon.png";
 import refubriseIcon from "../../assets/icons/refubrise_icon.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="w-full h-[90vh] flex flex-col lg:flex-row my-2">
-      <div className="w-full lg:w-[50vw]">
+      <motion.div
+        initial={{ translateX: -50, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ type: "keyframes", duration: 1 }}
+        viewport={{ once: true }}
+        className="w-full lg:w-[50vw]"
+      >
         <img
           className="w-full h-[40vh] md:h-[30vh] lg:h-full"
           src={sideImage}
           alt="side-image"
         />
-      </div>
-      <div className=" w-full  lg:w-[50vw] flex flex-col gap-5 justify-center p-4 bg-[#F8F8F8]">
+      </motion.div>
+      <motion.div
+        initial={{ translateX: 50, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className=" w-full  lg:w-[50vw] flex flex-col gap-5 justify-center p-4 bg-[#F8F8F8]"
+      >
         <div className="flex w-full md:w-[80%] gap-2 lg:w-[70%] p-3">
           <img src={buildIcon} alt="build" />
           <div className="">
@@ -45,7 +58,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
